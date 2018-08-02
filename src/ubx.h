@@ -89,9 +89,16 @@
 #define UBX_ID_CFG_TMODE3	0x71
 #define UBX_ID_MON_VER		0x04
 #define UBX_ID_MON_HW		0x09
-#define UBX_ID_RTCM3_1005	0x05
-#define UBX_ID_RTCM3_1077	0x4D
-#define UBX_ID_RTCM3_1087	0x57
+
+#define UBX_ID_RTCM3_1005	0x05	/**< Stationary RTK reference station ARP */
+#define UBX_ID_RTCM3_1074	0x4A	/**< GPS MSM4 */
+#define UBX_ID_RTCM3_1077	0x4D	/**< GPS MSM7 */
+#define UBX_ID_RTCM3_1084	0x54	/**< GLONASS MSM4 */
+#define UBX_ID_RTCM3_1087	0x57	/**< GLONASS MSM7 */
+#define UBX_ID_RTCM3_1124	0x7C	/**< BeiDou MSM4 */
+#define UBX_ID_RTCM3_1127	0x7F	/**< BeiDou MSM7 */
+#define UBX_ID_RTCM3_1230	0xE6	/**< GLONASS code-phase biases */
+#define UBX_ID_RTCM3_4072	0xFE	/**< Reference station PVT (u-blox proprietary RTCM Message) */
 
 /* Message Classes & IDs */
 #define UBX_MSG_NAV_POSLLH	((UBX_CLASS_NAV) | UBX_ID_NAV_POSLLH << 8)
