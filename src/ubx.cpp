@@ -473,6 +473,8 @@ GPSDriverUBX::receive(unsigned timeout)
 						return handled;
 					}
 				}
+			} else {
+				return handled;
 			}
 		}
 
